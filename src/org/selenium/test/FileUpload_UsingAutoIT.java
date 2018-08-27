@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
-public class FileUpload_UsingAutoIT extends BaseClass {
+public class FileUpload_UsingAutoIT extends BaseClassChrome {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		driver.get("http://nervgh.github.io/pages/angular-file-upload/examples/simple/");

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 public class  HashMapExample_printTheOcuuranceOfPoori extends BaseClass{
 	public static void main(String[] args) {
 
-		driver.get("file:///C:/Users/VISHAL/Desktop/list.html");
+		driver.get("file:///C:/Users/VISHAL/Desktop/New%20folder/select.html");
 		WebElement list =driver.findElement(By.id("mtr"));
 		Select s = new Select(list);
 		List <WebElement> allElements = s.getOptions();

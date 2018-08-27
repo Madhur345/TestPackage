@@ -12,6 +12,7 @@ public class ScrollDownClick extends BaseClassChrome {
 		WebElement footerLogo=driver.findElement(By.id("footerLogo"));
 		int xloc = footerLogo.getLocation().getX();
 		int yloc = footerLogo.getLocation().getY();
+		System.out.println(xloc);
 		js.executeScript("window.scrollTo("+xloc+" ,"+yloc+")");
 		Thread.sleep(3000);
 	}

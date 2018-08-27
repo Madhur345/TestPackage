@@ -9,7 +9,7 @@ public class WebTableDemo extends BaseClass {
 
 	public static void main(String[] args) {
 		
-		driver.get("file:///C:/Users/VISHAL/Desktop/table.html");
+		driver.get("file:///C:/Users/VISHAL/Desktop/New%20folder/webtable.html");
 		System.out.println("*******Total Rows****");
 		List<WebElement> allrows =driver.findElements(By.xpath("//tr"));
 		System.out.println(allrows.size());
@@ -19,16 +19,19 @@ public class WebTableDemo extends BaseClass {
 		System.out.println("*******Total Cells****");
 		List<WebElement> allcells =driver.findElements(By.xpath("//td|//th"));
 		System.out.println(allcells.size());
+		int countNum =0;
 		int sum =0;
 		for(WebElement cellElement : allcells){
 			String text = cellElement.getText();
 			try{
 				int num=Integer.parseInt(text);
 				System.out.println(num);
+				countNum++;
 				sum =sum+num;
 			}catch(Exception e){
 			}
 		}
+		System.out.println(countNum);
 		System.out.println("sum of all number is : " +sum);
 		String xp ="//td[text()='Total']/following-sibling::td";
 		String expectedTotal =driver.findElement(By.xpath(xp)).getText();

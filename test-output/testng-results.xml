@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17435" started-at="2018-04-06T08:19:06Z" finished-at="2018-04-06T08:19:23Z">
+  <suite name="Suite" duration-ms="39388" started-at="2018-08-20T05:45:18Z" finished-at="2018-08-20T05:45:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17435" started-at="2018-04-06T08:19:06Z" finished-at="2018-04-06T08:19:23Z">
-      <class name="org.selenium.test.DataBaseTesting">
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:org.selenium.test.DataBaseTesting@1c9b0314]" name="testLogin" duration-ms="17397" started-at="2018-04-06T08:19:06Z" finished-at="2018-04-06T08:19:23Z">
+    <test name="TestChromeWindows" duration-ms="32332" started-at="2018-08-20T05:45:18Z" finished-at="2018-08-20T05:45:51Z">
+      <class name="org.selenium.test.SeleniumGridNew">
+        <test-method status="PASS" signature="launchFirefoxAndChrome(java.lang.String, java.lang.String)[pri:0, instance:org.selenium.test.SeleniumGridNew@58c1670b]" name="launchFirefoxAndChrome" duration-ms="32297" started-at="2018-08-20T05:45:18Z" finished-at="2018-08-20T05:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- org.selenium.test.DataBaseTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- launchFirefoxAndChrome -->
+      </class> <!-- org.selenium.test.SeleniumGridNew -->
+    </test> <!-- TestChromeWindows -->
+    <test name="TestFireFoxWindows" duration-ms="39388" started-at="2018-08-20T05:45:18Z" finished-at="2018-08-20T05:45:58Z">
+      <class name="org.selenium.test.SeleniumGridNew">
+        <test-method status="PASS" signature="launchFirefoxAndChrome(java.lang.String, java.lang.String)[pri:0, instance:org.selenium.test.SeleniumGridNew@7a765367]" name="launchFirefoxAndChrome" duration-ms="39356" started-at="2018-08-20T05:45:18Z" finished-at="2018-08-20T05:45:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFirefoxAndChrome -->
+      </class> <!-- org.selenium.test.SeleniumGridNew -->
+    </test> <!-- TestFireFoxWindows -->
+  </suite> <!-- Suite -->
 </testng-results>

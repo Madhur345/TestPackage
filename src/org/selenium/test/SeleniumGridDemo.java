@@ -18,7 +18,7 @@ public class SeleniumGridDemo {
 		DesiredCapabilities whichbrowser = new DesiredCapabilities();
 		whichbrowser.setBrowserName(browser);
 		WebDriver driver = new RemoteWebDriver(whichSystem, whichbrowser);
-		driver.get("http://localhost/login.do");
+		driver.get("http://demo.actitime.com/");
 		WebElement un =	driver.findElement(By.id("username"));
 		for(int i=1;i<10;i++){
 			un.sendKeys("admin"+i);
