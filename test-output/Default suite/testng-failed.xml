@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.selenium.test.DemoTestng">
+      <class name="org.selenium.test.TestLinkIntegration">
         <methods>
-          <include name="deleteUser"/>
-          <include name="createUser"/>
+          <include name="TestOne"/>
         </methods>
-      </class> <!-- org.selenium.test.DemoTestng -->
+      </class> <!-- org.selenium.test.TestLinkIntegration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

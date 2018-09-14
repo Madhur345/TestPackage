@@ -14,7 +14,7 @@ public class DataBaseTesting extends BaseClass{
 	@Test
 	public void testLogin() throws SQLException, InterruptedException{
 		ERPLoginPage l = new ERPLoginPage(driver);
-		driver.get("http://perp.accotech.xyz/#/login");
+		driver.get("http://tpod.accotech.xyz/erp_squareplums/index.html#/login");
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con=	DriverManager.getConnection("jdbc:mysql://95.216.7.84:3306/master","root","P@88w0rd");
@@ -25,7 +25,6 @@ public class DataBaseTesting extends BaseClass{
 				String password =rs.getString(2);
 				l.setUserName(usename);
 				l.setPassword(password);
-				l.clickLogin();
 			}
 		}catch(ClassNotFoundException e){
 		}

@@ -10,7 +10,6 @@ public class ActiTimeLogin extends BaseClass{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@name='pwd']")).sendKeys("manager");
 		Thread.sleep(1000);
-		//driver.findElement(By.xpath("//div[text()='Login ']")).click();
 		driver.findElement(By.xpath("//div[contains(text(),'Login')][1]")).click();
 	}                               
 }
