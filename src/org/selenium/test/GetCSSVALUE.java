@@ -16,6 +16,8 @@ public class GetCSSVALUE extends BaseClassChrome {
 		String actualErrorText =errMsgObj.getText();
 		System.out.println(actualErrorText);
 		String actualColor=errMsgObj.getCssValue("color");
+		String backColor =errMsgObj.getCssValue("backgroundcolor");
+		System.out.println(backColor);
 		System.out.println(actualColor);
 		String asHex=Color.fromString(actualColor).asHex();
 		String expectedColor="#ce0100";
